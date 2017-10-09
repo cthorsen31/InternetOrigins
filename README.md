@@ -1,6 +1,12 @@
 # InternetOrigins HTML | CSS
-Simple Project for Web &amp; Mobile
 
+
+# TODO
+* Update Content
+* Media Queries for responsive design
+
+
+Simple Project for Web &amp; Mobile
 
 Utilizing some basic material design principles.
 
