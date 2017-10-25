@@ -18,7 +18,8 @@ nav {
     text-align: center;
     width: 100%;
     height: 5%;
-    background-color: #24363E;
+    background-color: #3D5B69;
+    padding-bottom: 10px;
 }
 
 nav a {
@@ -43,7 +44,7 @@ Main Content Attributes
 */
 .main-content {
     margin: 5% 20%;
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
 .main-content h1 {
@@ -53,6 +54,13 @@ Main Content Attributes
 /*
 Pioneers Content
 */
+
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .card {
     display: inline-block;
@@ -72,6 +80,7 @@ Pioneers Content
 }
 
 .card img {
+    height: 275px;
     width: 100%;
     border-radius: 5px 5px 0 0;
     filter: grayscale(100%); 
@@ -91,11 +100,20 @@ HTTP Content
 }
 
 
+
+
 /*
 Terminology Content
 */
 
+.term-cont {
+    display: flex;
+}
 
+.container-term {
+    padding: 2px 16px;
+    min-height: 150px;
+}
 
 
 /*
@@ -107,9 +125,9 @@ footer {
     bottom: 0;
     width: 100%;
     height: 10%;
-    background-color: #24363E;
+    background-color: #3D5B69;
     text-align: center;
-    box-shadow: 0px 250px 0px 250px #24363E;
+    box-shadow: 0px 250px 0px 250px #3D5B69;
 }
 
 footer a {
@@ -130,5 +148,70 @@ i:active {
 
 }
 
-i:
+/* 
+Reference Content
+*/
+
+.long-card {
+    padding: 5px 10px;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 100%;
+    margin: 1.2em .5em;
+}
+
+.long-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+
+
+@media (max-width: 768px){
+    .main-content{ 
+        margin: 5% 8%;
+    }
+    
+    
+    nav {
+        position: relative;
+        width: 100%;
+    }
+    
+    nav a {
+        display: inline-block;
+        font-size: 1em;
+    }
+    
+    .card {
+        display: block;
+        width: 90%;
+    }
+    
+    .http-img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .fit {
+        width: 100%;
+    }
+    
+    h1 {
+        margin-top: 10%;
+    }
+    
+    .long-card {
+        margin: 1.2em .05em;   
+    }
+}
+
+@media (max-width: 1024px){
+    h1 {
+        margin-top: 10%;
+    }
+    
+}
 
